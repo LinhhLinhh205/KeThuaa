@@ -31,5 +31,15 @@ namespace BT03
             else
                 Console.WriteLine("Danh sach da day");
         }
+        public void HienThiDS()
+        {
+            for(int i = 0; i < thisinh.Length; i++)
+            {
+                thisinh[i].HienThiThongTin();
+            }
+        }
+        
+
+
     }
 }

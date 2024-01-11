@@ -44,5 +44,27 @@ namespace BT03
             get { return mucuutien; }
             set { mucuutien = value; }
         }
+        public void NhapThongTin()
+        {
+            Console.Write("Nhap so bao danh:");
+            Sobaodanh = int.Parse(Console.ReadLine());
+            Console.Write("Nhap ho ten:");
+            Hoten = Console.ReadLine();
+            Console.Write("Nhap dia chi:");
+            Diachi = Console.ReadLine();
+            Console.Write("Nhap muc uu tien:");
+            Mucuutien = int.Parse(Console.ReadLine());
+
+
+        }
+        public void HienThiThongTin()
+        {
+            Console.WriteLine($"So bao danh:{Sobaodanh}");
+            Console.WriteLine($"Ho Ten:{Hoten}");
+            Console.WriteLine($"Dia chi:{Diachi}");
+            Console.WriteLine($"Muc uu tien:{Mucuutien}");
+
+        }
+
     }
 }

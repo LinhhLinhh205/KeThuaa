@@ -13,6 +13,15 @@ namespace BT03
         {
             MonThi = new string[] { "Toan", "Ly", "Hoa" };
         }
+        public new void NhapThongTin()
+        {
+            base.NhapThongTin();
+        }
+        public new void HienThiThongTin()
+        {
+            base.HienThiThongTin();
+            Console.WriteLine($"Khoi A. Mon thi:{string.Join(",",MonThi)}");
+        }
     }
     class TSKhoiB : ThiSinh
     {
@@ -21,6 +30,16 @@ namespace BT03
         {
             MonThi = new string[] { "Toan", "Hoa", "Sinh" };
         }
+        public new void NhapThongTin()
+        {
+            base.NhapThongTin();
+        }
+        public new void HienThiThongTin()
+        {
+            base.HienThiThongTin();
+            Console.WriteLine($"Khoi B. Mon thi:{string.Join(",", MonThi)}");
+        }
+
     }
     class TSKhoiC : ThiSinh
     {
@@ -28,6 +47,15 @@ namespace BT03
         public TSKhoiC()
         {
             MonThi = new string[] { "Van", "Su", "Dia" };
+        }
+        public new void NhapThongTin()
+        {
+            base.NhapThongTin();
+        }
+        public new void HienThiThongTin()
+        {
+            base.HienThiThongTin();
+            Console.WriteLine($"Khoi C. Mon thi:{string.Join(",", MonThi)}");
         }
     }
 
